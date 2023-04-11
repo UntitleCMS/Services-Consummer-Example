@@ -1,0 +1,37 @@
+.EOL::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.console {
+    padding: 20px;
+    background-color: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.console input[type="text"] {
+    background-color: #ffffff00;
+    caret-color: rgb(255, 255, 255);
+    caret-shape: block;
+    color: inherit;
+    border: none;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    padding: none;
+    width: fit-content;
+}
+
+.console input[type="text"]:focus {
+    outline: none;
+}
+
+.codeContainer {
+    width: 95%;
+    height: 400px;
+    padding : 20px;
+    border-radius: 5px;
+    background-color: bisque;
+    overflow-y: scroll;
+}

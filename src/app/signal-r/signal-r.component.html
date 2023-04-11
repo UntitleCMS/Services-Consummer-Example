@@ -1,0 +1,22 @@
+<br>
+<br>
+<input [(ngModel)]="title">
+<select [(ngModel)]="language" (change)="changelang()" #lang>
+  <option value="Java">Java</option>
+  <option value="Python">Python</option>
+  <option value="Shell">Shell</option>
+</select>
+
+<textarea class="codeContainer" [(ngModel)]="codeeditor" #contentcode></textarea>
+
+<br>
+<br>
+<button (click)="sendCode()">send code</button>
+<br>
+<br>
+
+<hr>
+<form class="console" (submit)="sendInput($event)" onclick="this.ip.focus()">
+    <span *ngFor="let i of output">{{i}}<br *ngIf="i=='\n'"></span>
+    <input autocomplete="off" type="text" name="ip" id="" autofocus>
+</form>

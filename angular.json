@@ -63,7 +63,8 @@
               "browserTarget": "tmpng:build:production"
             },
             "development": {
-              "browserTarget": "tmpng:build:development"
+              "browserTarget": "tmpng:build:development",
+              "proxyConfig": "proxy.config.json"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b85393f2-f84c-41db-b8da-ff6508c99216"
   }
 }
