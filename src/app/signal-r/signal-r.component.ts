@@ -26,7 +26,17 @@ export class SignalRComponent implements OnInit, OnDestroy, AfterViewInit {
     ["Python",
       `print("hello, Python\'s world!");`],
     ["Shell",
-       `echo "Hello, Shell's World!"`]
+       `echo "Hello, Shell's World!"`],
+    ["C",`#include <stdio.h>
+
+int main(){
+    printf("Hello, world!\\n");
+    char buf[1024];
+    printf("Enter your Name: ");
+    scanf("%s", buf);
+    printf("Nice to meet you %s\\n",buf);
+    return 0 ;
+}`]
   ]);
   codeeditor:string = this.code.get(this.language)!;
 
