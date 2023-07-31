@@ -66,6 +66,9 @@
               "browserTarget": "Services-Consummer-Example:build:development"
             }
           },
+          "options": {
+              "proxyConfig": "src/proxy.conf.json"
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "abc65710-dec8-462a-a5f1-9603c08ddb84"
   }
 }

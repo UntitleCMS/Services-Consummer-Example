@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "http://p.villsource.tk",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
